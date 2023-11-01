@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Rating Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Table Tennis Rating Calculator</h1>
+        <form id="rating-form">
+            <label for="playerAName">Player A's Name:</label>
+            <input type="text" id="playerAName" required>
+            <label for="playerARating">Player A's Current Rating:</label>
+            <input type="number" id="playerARating" required>
+            <label for="playerBName">Player B's Name:</label>
+            <input type="text" id="playerBName" required>
+            <label for="playerBRating">Player B's Current Rating:</label>
+            <input type="number" id="playerBRating" required>
+            <label for="matchResult">Match Result (W for Player A wins, L for Player B wins):</label>
+            <input type="text" id="matchResult" required>
+            <button type="button" id="calculate-button">Calculate</button>
+        </form>
+        <div id="results">
+            <h2>Results:</h2>
+            <div id="playerAResult"></div>
+            <div id="playerBResult"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
